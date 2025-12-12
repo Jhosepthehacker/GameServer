@@ -80,7 +80,7 @@ def save_data_of_users(data_of_input: Input):
     ]
     forbidden = True
 
-    if user_name[0][0] < 1 and user_password[0][0]:
+    if user_name[0][0] < 1 and user_password[0][0]: # Sorry por la tremenda tontería que he hecho en esta línea de código, jajajaja
         for i in id, name, password:
             if i in (',', '(', ')', ';', '-', "'"):
                 forbidden = False
